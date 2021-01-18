@@ -22,8 +22,8 @@ const HomePage = () => {
 
       {productList.map((product) => (
         <div key={product.id}>
-          { product.name }
-          { product.image }
+          <h3>{ product.name }</h3>
+          <img src={product.image} alt={product.name}/>
         </div>
       ))}
     </div>

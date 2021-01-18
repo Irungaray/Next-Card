@@ -1,14 +1,14 @@
-import React from 'react'
-import { useRouter } from 'next/router'
+import React from 'react';
+import { useRouter } from 'next/router';
 
 const ProductPage = () => {
-  const { query } = useRouter()
+  const { query } = useRouter();
 
   return (
     <section>
-      <h1>Página producto: {query.id}</h1>
+      <h1>Product: {query.id}</h1>
     </section>
   )
 }
 
-export default ProductPage
+export default ProductPage;
