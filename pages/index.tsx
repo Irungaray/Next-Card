@@ -1,5 +1,4 @@
 import React, { useEffect, useState} from 'react'
-import Navbar from '../components/Navbar/Navbar'
 
 const HomePage = () => {
   const [productList, setProductList] = useState<TProduct[]>([]);
@@ -17,7 +16,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <Navbar />
       <div>NEXT JS VIDEOCARDS</div>
 
       {productList.map((product) => (
