@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 
-import Layout from '@components/Layout/Layout';
+import CartProvider from '@store/Cart'
 
 import 'semantic-ui-css/semantic.min.css'
 import '../global.css'
@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 	// Layout
 	// aditional props
 	return (
-		<Layout>
+		<CartProvider>
 			<Component {...pageProps} title={'Next Card'} />
-		</Layout>
+		</CartProvider>
 	);
 }
 
