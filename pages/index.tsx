@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from 'react';
 
+import ProductList from '@components/ProductList/ProductList'
+
 const HomePage = () => {
 	const [productList, setProductList] = useState<TProduct[]>([]);
 
@@ -18,12 +20,7 @@ const HomePage = () => {
 		<div>
 			<div>NEXT JS VIDEOCARDS</div>
 
-			{productList.map((product) => (
-				<div key={product.id}>
-					<h3>{ product.name }</h3>
-					<img src={product.image} alt={product.name}/>
-				</div>
-			))}
+			<ProductList products={productList} />
 		</div>
 	);
 };
