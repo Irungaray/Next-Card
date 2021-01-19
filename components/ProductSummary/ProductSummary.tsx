@@ -1,6 +1,7 @@
 import React from 'react'
 import { Item, Label } from 'semantic-ui-react'
 
+import AddToCart from './AddToCart'
 import ProductAttributes from './ProductAttributes'
 
 type ProductSummaryProps = {
@@ -25,7 +26,7 @@ const ProductSummary = ({ product }: ProductSummaryProps) => (
           </Item.Description>
 
           <Item.Extra>
-            {/* <AddToCart product={product} /> */}
+            <AddToCart product={product} />
           </Item.Extra>
         </Item.Content>
       </Item>
