@@ -1,17 +1,42 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
+import { Menu, Container } from 'semantic-ui-react'
+
+import ShoppingCartIcon from './ShoppingCartIcon'
+
+import { useCart } from '@store/Cart'
 
 export default function Navbar() {
+	const { pathname } = useRouter()
+	const { count: cartCount } = useCart()
+
 	return (
-		<nav>
-			<menu>
-				<Link href="/">
-					<a>Home</a>
-				</Link>
-				<Link href="/about">
-					<a>About</a>
-				</Link>
-			</menu>
-		</nav>
+		<Menu size="huge" borderless pointing as="header">
+			<Container text>
+			<Link href="/" passHref>
+          <Menu.Item
+            active={pathname === '/'}
+            title="Home | All products"
+          >
+            Next - Video Cards
+          </Menu.Item>
+        </Link>
+
+				<Menu.Menu position="right">
+          <Link href="/cart" passHref>
+            <Menu.Item active={pathname === '/cart'}>
+              <ShoppingCartIcon cartCount={cartCount} name="Cart" />
+            </Menu.Item>
+          </Link>
+        </Menu.Menu>
+			</Container>
+
+			<style jsx global>{`
+        .ui.menu.huge {
+          font-size: 1.5rem;
+        }
+      `}</style>
+		</Menu>
 	);
 }
