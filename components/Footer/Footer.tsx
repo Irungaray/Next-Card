@@ -38,20 +38,20 @@ const Footer = () => (
           <Grid.Column width={7}>
             <Header as="h4">Done by</Header>
             <p>
-              <a href="https://twitter.com/Irunga_Ray">Irungaray.{' '}</a>
+              <a href="https://twitter.com/Irunga_Ray" target="blank">Irungaray.{' '}</a>
               My first incursion on NextJs! Hope you enjoy.
             </p>
             <List horizontal style={{ display: 'flex' }}>
               <List.Item
                 icon="twitter"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/Irunga_Ray">Twitter</a>}
+                content={<a href="https://twitter.com/Irunga_Ray" target="blank">Twitter</a>}
               />
               <List.Item
                 icon="github"
                 style={{ display: 'flex' }}
                 content={
-                  <a href="https://github.com/Irungaray">
+                  <a href="https://github.com/Irungaray" target="blank">
                     GitHub
                   </a>
                 }

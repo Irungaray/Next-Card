@@ -19,7 +19,7 @@ const HomePage = () => {
 
 	return (
 		<Layout>
-			<div>NEXT JS VIDEOCARDS</div>
+			<div>WHICH ONE IS GONNA BE YOUR <strong>NEXT VIDEOCARD?</strong></div>
 
 			<ProductList products={productList} />
 		</Layout>
