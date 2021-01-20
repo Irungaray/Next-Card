@@ -16,8 +16,10 @@ export const getStaticPaths = async () => {
 	}))
 
 	return {
-		paths: paths,
 		// incremental static generation
+		// Statically generate all paths
+		paths: paths,
+		// Everything else falls for 404
 		fallback: false
 	}
 }
