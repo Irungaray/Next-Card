@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+// Static  Page
+import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import ProductList from '@components/ProductList/ProductList'
 import Layout from '@components/Layout/Layout';
