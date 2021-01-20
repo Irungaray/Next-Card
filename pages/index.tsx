@@ -1,21 +1,21 @@
-import React, { useEffect, useState} from 'react';
-
+import React, { useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 import ProductList from '@components/ProductList/ProductList'
 import Layout from '@components/Layout/Layout';
 
-const HomePage = () => {
-	const [productList, setProductList] = useState<TProduct[]>([]);
+export const getServerSideProps = async () => {
+	const response = await fetch('https://next-card.vercel.app/api/card')
+	const { data: productList }: TAPIResponse = await response.json()
 
-	useEffect(() => {
-		window
-			.fetch('/api/card')
-			.then((response) => response.json())
-			.then(({ data, length}) => {
-				setProductList(data);
-			});
-	}, []);
+	return {
+		props: {
+			productList,
+		}
+	}
+}
 
-	console.log(productList);
+const HomePage = ({ productList }: { productList: TProduct[] }) => {
+	console.log(productList)
 
 	return (
 		<Layout>
