@@ -36,10 +36,10 @@ And give yourself a nice videocard from the Next-Card Store!
 - CSS in JS
 - Semantic UI for React
 - Improved SEO and performance with
-    λ Server Side Rendering
-    ○ Static Rendering
-    & Incremental Static Regeneration
-    via NextJs built-in functions
+   - λ Server Side Rendering
+   - ○ Static Rendering
+   - & Incremental Static Regeneration
+      - via NextJs built-in functions
 - Analytics Metrics via NextJs 10 Analytics Feature
 - Deployed on Vercel
 - Continous Deployment on Vercel via GitHub
@@ -47,10 +47,13 @@ And give yourself a nice videocard from the Next-Card Store!
 <p align="center">
   <img alt="NEXT CARD ANALYTICS" src="https://i.postimg.cc/MTs2DGCw/next-card-analytics.png" />
 </p>
+
 <p align="center">
-  <h1> Made by </h1>
-  <img alt="Author" src="https://irungaray.github.io/Portafolio/24152fa3198c80f90d876be2367e2b7d.png" />
-  <h5> On NextJs advanced course dictated by @josshernandez </h5>
+  <h1 align="center"> Made by </h1>
+  <a align="center" href="https://twitter.com/Irunga_Ray">
+    <img alt="Author" src="https://irungaray.github.io/Portafolio/24152fa3198c80f90d876be2367e2b7d.png" />
+  </a>
+  <h6 align="center"> On NextJs advanced course dictated by @josshernandez </h6>
 </p>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
