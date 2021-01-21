@@ -20,7 +20,7 @@ const HomePage = ({ productList }: { productList: TProduct[] }) => {
 
 	return (
 		<Layout>
-			<div>WHICH ONE IS GONNA BE YOUR <strong>NEXT VIDEOCARD?</strong></div>
+			<h2>WHICH ONE IS GONNA BE YOUR <strong>NEXT VIDEOCARD?</strong></h2>
 
 			<ProductList products={productList} />
 		</Layout>
